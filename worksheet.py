@@ -40,30 +40,30 @@
 
 #4
 
-# def prime_num():
-#     first_num = int(input("First number: "))
-#     if first_num < 2:
-#         first_num = 2
-#     second_num = int(input("Second number: "))
-#     prime = 0
-#     prime_nums = []
-#     for num in range(first_num, second_num + 1):
-#         if num > 3:
-#             prime = 0
-#             for i in range(2, num):
-#                 if num % i == 0:
-#                     break
-#                 else:                 
-#                     prime = prime + 1
-#                     if prime > num / 2:   
-#                         prime_nums.append(num)
-#                         break
+def prime_num():
+    first_num = int(input("First number: "))
+    if first_num < 2:
+        first_num = 2
+    second_num = int(input("Second number: "))
+    prime = 0
+    prime_nums = []
+    for num in range(first_num, second_num + 1):
+        if num > 3:
+            prime = 0
+            for i in range(2, num):
+                if num % i == 0:
+                    break
+                else:                 
+                    prime = prime + 1
+                    if prime > num / 2:   
+                        prime_nums.append(num)
+                        break
                     
-#         else:
-#             prime_nums.append(num)
+        else:
+            prime_nums.append(num)
 
-#     print(prime_nums)
-# prime_num()
+    print(prime_nums)
+prime_num()
 
 #5
 
